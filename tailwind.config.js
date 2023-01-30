@@ -14,8 +14,12 @@ module.exports = {
         "primary-400": "#007acc",
         "primary-800": "#2a3e54",
         ///////////      Green     ////////////////
-        "success-400" : "#16825d"
+        "success-400" : "#16825d",
+        /////////////////////////////
+        "primary-text": "#cccccc",
 
+        ///////////////  YELLOW  //////////////////
+        "warning-primary" : "#f2eb00"
       },
     },
   },

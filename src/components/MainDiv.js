@@ -12,5 +12,5 @@ function MainDiv(props) {
 export default MainDiv
 
 const StyledDiv = styled.div`
-height: calc(100vh - 6.5rem) ;
+height: calc(100vh - 96px) ;
 `
