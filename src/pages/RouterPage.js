@@ -1,11 +1,18 @@
-import React from 'react'
+import React from "react";
+import styled from 'styled-components'
+
 
 function RouterPage(props) {
   return (
-    <div className='w-full h-full'>
-        {props.children}
-    </div>
-  )
+    <StyledDiv className="relative rounterPage w-full h-full overflow-y-auto">
+      {props.children}
+    </StyledDiv>
+  );
 }
 
-export default RouterPage
+export default RouterPage;
+
+const StyledDiv = styled.div`
+  height: calc(100vh - 96px);
+  max-height: calc(100vh - 96px);
+`;

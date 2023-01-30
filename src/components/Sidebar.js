@@ -1,12 +1,11 @@
 import React from "react";
-import { BsThreeDots } from "react-icons/bs";
 import {
   VscNewFile,
   VscChevronDown,
   VscNewFolder,
   VscRefresh,
   VscCollapseAll,
-  VscEllipsis
+  VscEllipsis,
 } from "react-icons/vsc";
 import {
   Accordion,
@@ -19,10 +18,10 @@ import SideNav from "./SideNav";
 
 const items = [
   {
-    uuid: "1",
+    uuid: '1',
     icon: <VscChevronDown size={20} />,
     heading: "REACT",
-    content: <SideNav/>
+    content: <SideNav />,
   },
 ];
 
@@ -30,27 +29,24 @@ function Sidebar() {
   return (
     <div className="relative w-72 h-full flex flex-col bg-secondary-200 justify-start items-start text-primary-text">
       <div className="flex w-full justify-between items-center py-2 px-4 text-sm">
-        <p>EXPLORER</p>
+        <p className="text-xs">EXPLORER</p>
         <VscEllipsis />
       </div>
       {/* ///////////////////////////////////////// */}
-      <Accordion allowZeroExpanded className=" flex w-full">
+      <Accordion preExpanded={['1']} className=" flex w-full">
         {items.map((item) => (
-          <AccordionItem
-            key={item.uuid}
-            className="w-full px-4 py-1"
-          >
+          <AccordionItem key={item.uuid} className="w-full px-4 py-1">
             <AccordionItemHeading>
               <AccordionItemButton className="flex items-center gap-2 font-semibold">
-                <div className="flex w-full justify-between">
-                  <div className="flex gap-2">
+                <div className="flex w-full items-center justify-between">
+                  <div className="flex items-center gap-2 text-xs">
                     {item.icon} {item.heading}
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex items-center gap-2">
                     <VscNewFile />
                     <VscNewFolder />
                     <VscRefresh />
-                    <VscCollapseAll/>
+                    <VscCollapseAll />
                   </div>
                 </div>
               </AccordionItemButton>

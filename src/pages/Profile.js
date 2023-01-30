@@ -2,8 +2,8 @@ import React from 'react'
 
 function Profile() {
   return (
-    <div className='text-white flex w-full h-full items-center justify-center'>Profile</div>
+    <div className='flex w-full h-[1000px] text-primary-text p-4'>Profile</div>
   )
 }
 
-export default Profile
+export default Profile  
