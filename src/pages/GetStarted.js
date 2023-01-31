@@ -5,7 +5,7 @@ import {
   AiOutlineFacebook,
 } from "react-icons/ai";
 import { VscLightbulb } from "react-icons/vsc";
-import {SiJavascript} from 'react-icons/si'
+import { SiJavascript } from "react-icons/si";
 import styled from "styled-components";
 
 function GetStarted() {
@@ -24,7 +24,9 @@ function GetStarted() {
             <p className="text-xl">Connect with me</p>
             <button className="flex items-center gap-3 text-primary-600">
               <AiOutlineLinkedin size={25} />
-              gfrdgtrhgthtrhtrhtht
+              <a href=" https://www.linkedin.com/in/adrian-sumagang-16aaa4195/">
+                adriansumagang
+              </a>
             </button>
             <button className="flex items-center gap-3 text-primary-600">
               <AiOutlineMail size={25} />
@@ -44,7 +46,7 @@ function GetStarted() {
             </div>
             <div className=" bg-secondary-300 flex flex-col rounded-md py-2 px-4">
               <button className="flex items-center gap-2">
-                <VscLightbulb size={20} color="#397cff"/>
+                <VscLightbulb size={20} color="#397cff" />
                 Learn the Fundamentals
               </button>
             </div>
@@ -53,8 +55,8 @@ function GetStarted() {
               <p>Discover the best customizations to make VS Code</p>
             </div>
             <div className=" bg-secondary-300 flex flex-col rounded-md py-2 px-4">
-            <button className="flex items-center gap-2">
-                <SiJavascript size={20} color="#f2eb00"/>
+              <button className="flex items-center gap-2">
+                <SiJavascript size={20} color="#f2eb00" />
                 Get Started with Javascript
               </button>
             </div>
@@ -69,4 +71,4 @@ export default GetStarted;
 
 const StyledDiv = styled.div`
   min-height: calc(100vh - 132px);
-`
+`;

@@ -4,13 +4,13 @@ import Numberline from "../components/Numberline";
 function EmploymentHistory() {
   return (
     <div className="flex w-full h-[2000px] text-primary-text p-4 bg-secondary-400">
-      <Numberline number={26} />
+      <Numberline number={30} />
       <div className="flex flex-col employent-code text-sm">
         <p>
           <span style={{ color: "rgb(197, 134, 192)" }}>export</span>
           <span style={{ color: "rgb(86, 156, 214)" }}> const</span>
-          <span style={{ color: "rgb(79, 193, 255)" }}> EmploymentHistory</span>=
-          [
+          <span style={{ color: "rgb(79, 193, 255)" }}> EmploymentHistory </span>
+          = [
         </p>
         <p className="indent-3">{`{`}</p>
         <p className="indent-6">
@@ -30,12 +30,10 @@ function EmploymentHistory() {
         </p>
         <p className="indent-6">
           <span style={{ color: "rgb(156, 220, 254)" }}>date: </span>
-          <span style={{ color: "rgb(181, 206, 168)" }}>11</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>10</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>2000</span>-
-          <span style={{ color: "rgb(181, 206, 168)" }}>10</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>20</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>2000</span>,
+          <span style={{ color: "rgb(181, 206, 168)" }}>Jul </span>
+          <span style={{ color: "rgb(181, 206, 168)" }}>2019</span> -
+          <span style={{ color: "rgb(181, 206, 168)" }}> Jun</span>
+          <span style={{ color: "rgb(181, 206, 168)" }}> 2020</span>,
         </p>
         <p className="indent-3">{`},`}</p>
         <p className="indent-3">{`{`}</p>
@@ -59,12 +57,10 @@ function EmploymentHistory() {
         </p>
         <p className="indent-6">
           <span style={{ color: "rgb(156, 220, 254)" }}>date: </span>
-          <span style={{ color: "rgb(181, 206, 168)" }}>11</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>10</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>2000</span>-
-          <span style={{ color: "rgb(181, 206, 168)" }}>10</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>20</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>2000</span>,
+          <span style={{ color: "rgb(181, 206, 168)" }}>Nov </span>
+          <span style={{ color: "rgb(181, 206, 168)" }}>2020 </span>-
+          <span style={{ color: "rgb(181, 206, 168)" }}> Aug</span>
+          <span style={{ color: "rgb(181, 206, 168)" }}> 2021</span>,
         </p>
         <p className="indent-3">{`},`}</p>
         <p className="indent-3">{`{`}</p>
@@ -78,16 +74,17 @@ function EmploymentHistory() {
         </p>
         <p className="indent-6">
           <span style={{ color: "rgb(156, 220, 254)" }}>position: </span>
-          <span style={{ color: "rgb(206, 145, 120)" }}>"Web Designer"</span>,
+          <span style={{ color: "rgb(206, 145, 120)" }}>
+            " Outsource Web Designer"
+          </span>
+          ,
         </p>
         <p className="indent-6">
           <span style={{ color: "rgb(156, 220, 254)" }}>date: </span>
-          <span style={{ color: "rgb(181, 206, 168)" }}>11</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>10</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>2000</span>-
-          <span style={{ color: "rgb(181, 206, 168)" }}>10</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>20</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>2000</span>,
+          <span style={{ color: "rgb(181, 206, 168)" }}>Aug </span>
+          <span style={{ color: "rgb(181, 206, 168)" }}>2020 </span>-
+          <span style={{ color: "rgb(181, 206, 168)" }}> Nov</span>
+          <span style={{ color: "rgb(181, 206, 168)" }}> 2020</span>,
         </p>
         <p className="indent-3">{`},`}</p>
         <p className="indent-3">{`{`}</p>
@@ -105,12 +102,10 @@ function EmploymentHistory() {
         </p>
         <p className="indent-6">
           <span style={{ color: "rgb(156, 220, 254)" }}>date: </span>
-          <span style={{ color: "rgb(181, 206, 168)" }}>11</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>10</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>2000</span>-
-          <span style={{ color: "rgb(181, 206, 168)" }}>10</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>20</span>/
-          <span style={{ color: "rgb(181, 206, 168)" }}>2000</span>,
+          <span style={{ color: "rgb(181, 206, 168)" }}>Aug </span>
+          <span style={{ color: "rgb(181, 206, 168)" }}>2021 </span>-
+          <span style={{ color: "rgb(181, 206, 168)" }}> Feb</span>
+          <span style={{ color: "rgb(181, 206, 168)" }}> 2023</span>,
         </p>
         <p className="indent-3">{`},`}</p>
         <p>]</p>
