@@ -11,6 +11,7 @@ module.exports = {
         "secondary-light": "#333333",
         "secondary-50": "#858585",
         ////////////////////////////
+        "primary-600" : "#397cff",
         "primary-400": "#007acc",
         "primary-800": "#2a3e54",
         ///////////      Green     ////////////////
@@ -19,7 +20,14 @@ module.exports = {
         "primary-text": "#cccccc",
 
         ///////////////  YELLOW  //////////////////
-        "warning-primary" : "#f2eb00"
+        "warning-primary" : "#f2eb00",
+        //////////////////// code /////////////
+        "code-orange": "#d88e74",
+        "code-light-blue": "#8ddaff",
+        "code-blue": "#1cbbff",
+        "code-green":"#00d3b3",
+        
+
       },
     },
   },

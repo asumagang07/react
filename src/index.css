@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+NKo&display=swap');
+
+.employent-code{
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Noto Sans NKo', sans-serif;
+}

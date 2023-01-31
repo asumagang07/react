@@ -1,16 +1,23 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { DiJavascript1, DiCss3 } from "react-icons/di";
-import { VscClose } from "react-icons/vsc";
+import { VscChromeClose } from "react-icons/vsc";
+import { DiVisualstudio } from "react-icons/di";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import cn from "classnames";
 import EmploymentHistory from "../pages/EmploymentHistory";
 import Services from "../pages/Services";
 import Profile from "../pages/Profile";
+import GetStarted from "../pages/GetStarted";
 
 const tabs = [
   {
+    id: "getStarted",
+    title: "Get Started",
+    icon: <DiVisualstudio size={20} color={"#007acc"} />,
+  },
+  {
     id: "about",
-    title: "About.js",
+    title: "About.css",
     icon: <DiCss3 size={20} color={"#0066b8"} />,
   },
   {
@@ -26,7 +33,7 @@ const tabs = [
 ];
 
 function DraggableTabs() {
-  const [active, setActive] = useState("about");
+  const [active, setActive] = useState("getStarted");
   const [draggedTabs, setDraggedTabs] = useState(tabs);
 
   function handleOnDragEnd(result) {
@@ -51,9 +58,8 @@ function DraggableTabs() {
     });
   };
 
-
   return (
-    <div className="flex flex-col w-full ">
+    <div className="flex flex-col w-full">
       <div
         className="flex sticky top-0
        bg-secondary-200"
@@ -90,8 +96,8 @@ function DraggableTabs() {
                           <div className="characters-thumb">{icon}</div>
                           {title}
                           {active === id && (
-                            <div onClick={() => handleDeleteTab(id)}>
-                              <VscClose />
+                            <div className="pl-3" onClick={() => handleDeleteTab(id)}>
+                              <VscChromeClose />
                             </div>
                           )}
                         </li>
@@ -110,6 +116,8 @@ function DraggableTabs() {
         <EmploymentHistory />
       ) : active === "about" ? (
         <Profile />
+      ) : active === "getStarted" ? (
+        <GetStarted />
       ) : (
         <Services />
       )}

@@ -27,13 +27,13 @@ const items = [
 
 function Sidebar() {
   return (
-    <div className="relative w-72 h-full flex flex-col bg-secondary-200 justify-start items-start text-primary-text">
+    <div className="relative w-80 h-full flex flex-col bg-secondary-200 justify-start items-start text-primary-text">
       <div className="flex w-full justify-between items-center py-2 px-4 text-sm">
         <p className="text-xs">EXPLORER</p>
         <VscEllipsis />
       </div>
       {/* ///////////////////////////////////////// */}
-      <Accordion preExpanded={['1']} className=" flex w-full">
+      <Accordion allowZeroExpanded= {true} className=" flex w-full">
         {items.map((item) => (
           <AccordionItem key={item.uuid} className="w-full px-4 py-1">
             <AccordionItemHeading>
