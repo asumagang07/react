@@ -8,10 +8,10 @@ import {
 } from "react-accessible-accordion";
 import { Link } from "react-router-dom";
 
-import { DiJavascript1, DiCss3,DiVisualstudio } from "react-icons/di";
+import { DiJavascript1, DiCss3 } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 import { VscChevronDown } from "react-icons/vsc";
-import { FcFolder } from "react-icons/fc";
+import {RiFolder5Fill} from 'react-icons/ri'
 import List from "./List";
 
 export const items = [
@@ -32,8 +32,8 @@ export const items = [
   },
   {
     uuid: "4",
-    chevrondown: <VscChevronDown size={20} />,
-    icon: <FcFolder size={20} />,
+    chevrondown: <VscChevronDown size={20}  />,
+    icon: <RiFolder5Fill size={20} color={'#e1ba76'} />,
     heading: "components",
     content: <List/>
   },

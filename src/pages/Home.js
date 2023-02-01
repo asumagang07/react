@@ -6,9 +6,6 @@ import Nav from "../components/Nav";
 import ActivityBar from "../components/ActivityBar";
 import Sidebar from "../components/Sidebar";
 import RouterPage from "./RouterPage";
-import { Route, Routes } from "react-router-dom";
-import Profile from "./Profile";
-import Services from "./Services";
 import DraggableTabs from "../components/DraggableTabs";
 
 function Home() {
@@ -21,10 +18,6 @@ function Home() {
         <Sidebar />
         <RouterPage>
           <DraggableTabs />
-          {/* <Routes>
-            <Route path="/" element={<Profile />} />
-            <Route path="/services" element={<Services />} />
-          </Routes> */}
         </RouterPage>
       </MainDiv>
       <Footer />

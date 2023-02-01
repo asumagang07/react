@@ -1,0 +1,1 @@
+export { footerStyles } from "./footerStyles";

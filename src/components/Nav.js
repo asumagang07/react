@@ -1,5 +1,5 @@
 import React from "react";
-import Toggle from "./Toggle";
+// import Toggle from "./Toggle";
 import Button from "../reusesableComponents/Button";
 
 function Nav() {

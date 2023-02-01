@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { DiJavascript1, DiCss3 } from "react-icons/di";
 import { VscChromeClose } from "react-icons/vsc";
 import { DiVisualstudio } from "react-icons/di";
@@ -59,10 +59,10 @@ function DraggableTabs() {
   };
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="relative flex flex-col w-full">
       <div
-        className="flex sticky top-0
-       bg-secondary-200"
+        className=" flex sticky top-0
+       bg-secondary-200 "
       >
         <DragDropContext onDragEnd={handleOnDragEnd}>
           <Droppable droppableId="characters" direction="horizontal">
@@ -96,7 +96,10 @@ function DraggableTabs() {
                           <div className="characters-thumb">{icon}</div>
                           {title}
                           {active === id && (
-                            <div className="pl-3" onClick={() => handleDeleteTab(id)}>
+                            <div
+                              className="pl-3"
+                              onClick={() => handleDeleteTab(id)}
+                            >
                               <VscChromeClose />
                             </div>
                           )}

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 import {
   VscArrowSwap,
   VscError,
@@ -9,24 +10,41 @@ import {
   VscJson,
   VscSync,
   VscSourceControl,
-  VscWarning
+  VscWarning,
 } from "react-icons/vsc";
+import cn from "classnames";
 
 function Footer() {
+  const {
+    theme: { footerStyles },
+  } = useContext(ThemeContext);
+
+  const btnStyles = cn(
+    footerStyles.buttonCls.base,
+    footerStyles.buttonCls.color.primary
+  );
+
+  const btn2Styles = cn(
+    footerStyles.buttonCls.base,
+    footerStyles.buttonCls.color.success,
+    'h-6 w-12 justify-center'
+
+  )
+
   return (
     <div className="h-6 w-full fixed bottom-0 bg-primary-400 flex items-center justify-between text-white text-xs">
       <div className="flex items-center gap-3">
-        <div className="bg-success-400 flex justify-center items-center h-6 w-12">
+        <div className={btn2Styles}>
           <VscArrowSwap />
         </div>
-        <button className="flex items-center gap-3 bg-primary-400 hover:opacity-75">
+        <button className={btnStyles}>
           <VscSourceControl />
           adrian-ui
         </button>
-        <button className="flex bg-primary-400 hover:opacity-75">
+        <button className={btnStyles}>
           <VscSync />
         </button>
-        <button className="flex items-center gap-1 bg-primary-400 hover:opacity-75">
+        <button className={btnStyles}>
           <VscError />
           1
           <VscWarning />0
@@ -35,25 +53,23 @@ function Footer() {
       </div>
       {/* //////////////////////////////////// */}
       <div className="flex items-center gap-3 pr-3">
-        <button className="flex items-center gap-3 bg-primary-400 hover:opacity-75">
-          CRLF
-        </button>
-        <button className="flex items-center gap-3 bg-primary-400 hover:opacity-75">
+        <button className={btnStyles}>CRLF</button>
+        <button className={btnStyles}>
           <VscJson />
           Javascript
         </button>
-        <button className="flex items-center gap-3 bg-primary-400 hover:opacity-75">
+        <button className={btnStyles}>
           <VscBroadcast />
           Go Live
         </button>
-        <button className="flex items-center gap-3 bg-primary-400 hover:opacity-75">
+        <button className={btnStyles}>
           <VscCheckAll />
           Prettier
         </button>
-        <button className="flex items-center gap-3 bg-primary-400 hover:opacity-75">
+        <button className={btnStyles}>
           <VscFeedback />
         </button>
-        <button className="flex items-center gap-3 bg-primary-400 hover:opacity-75">
+        <button className={btnStyles}>
           <VscBellDot />
         </button>
       </div>

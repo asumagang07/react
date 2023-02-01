@@ -3,8 +3,8 @@ import Numberline from "../components/Numberline";
 
 function EmploymentHistory() {
   return (
-    <div className="flex w-full h-[2000px] text-primary-text p-4 bg-secondary-400">
-      <Numberline number={30} />
+    <div className="flex w-full text-primary-text p-4 bg-secondary-400" style={{ minHeight: 'calc(100vh - 132px)' }}>
+      <Numberline number={26} />
       <div className="flex flex-col employent-code text-sm">
         <p>
           <span style={{ color: "rgb(197, 134, 192)" }}>export</span>
