@@ -27,7 +27,7 @@ const items = [
 
 function Sidebar() {
   return (
-    <div className="relative w-80 h-full flex flex-col bg-secondary-200 justify-start items-start text-primary-text">
+    <div className="relative w-80 h-full flex flex-col bg-default-400 justify-start items-start text-grayText">
       <div className="flex w-full justify-between items-center py-2 px-4 text-sm">
         <p className="text-xs">EXPLORER</p>
         <VscEllipsis />

@@ -32,7 +32,7 @@ function Footer() {
   )
 
   return (
-    <div className="h-6 w-full fixed bottom-0 bg-primary-400 flex items-center justify-between text-white text-xs">
+    <div className="h-6 w-full fixed bottom-0 bg-blueText flex items-center justify-between text-white text-xs">
       <div className="flex items-center gap-3">
         <div className={btn2Styles}>
           <VscArrowSwap />

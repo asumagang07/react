@@ -62,7 +62,7 @@ function DraggableTabs() {
     <div className="relative flex flex-col w-full">
       <div
         className=" flex sticky top-0
-       bg-secondary-200 "
+       bg-default-400 "
       >
         <DragDropContext onDragEnd={handleOnDragEnd}>
           <Droppable droppableId="characters" direction="horizontal">
@@ -78,13 +78,13 @@ function DraggableTabs() {
                       {(provided, snapshot) => (
                         <li
                           className={cn(
-                            "flex py-2 px-4 items-center gap-2  border-r border-secondary-400 text-xs text-primary-text",
+                            "flex py-2 px-4 items-center gap-2  border-r border-default-600 text-xs text-grayText",
                             snapshot.isDragging
                               ? "drop-shadow-lg opacity-50"
                               : "",
                             active === id
-                              ? "bg-secondary-400"
-                              : "bg-secondary-100"
+                              ? "bg-default-600"
+                              : "bg-default-200"
                           )}
                           onClick={() => {
                             handleActive(id);

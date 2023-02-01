@@ -12,12 +12,12 @@ import Tooltip from "../reusesableComponents/Tooltip";
 
 function ActivityBar() {
   return (
-    <div className="w-14 h-full flex bg-primary-800 justify-center py-4">
+    <div className="w-14 h-full flex bg-[#2a3e54] justify-center py-4">
       <div className="flex flex-col justify-between">
         <div className="flex flex-col gap-6">
           <Tooltip
             trigger={
-              <div className="text-secondary-50 hover:text-white cursor-pointer">
+              <div className="text-default-light hover:text-white cursor-pointer">
                 <VscFiles size={25} />
               </div>
             }
@@ -25,7 +25,7 @@ function ActivityBar() {
           />
           <Tooltip
             trigger={
-              <div className="text-secondary-50 hover:text-white cursor-pointer">
+              <div className="text-default-light hover:text-white cursor-pointer">
                 <VscSourceControl size={25} />
               </div>
             }
@@ -33,7 +33,7 @@ function ActivityBar() {
           />
           <Tooltip
             trigger={
-              <div className="text-secondary-50 hover:text-white cursor-pointer">
+              <div className="text-default-light hover:text-white cursor-pointer">
                 <VscSearch size={25} />
               </div>
             }
@@ -41,7 +41,7 @@ function ActivityBar() {
           />
           <Tooltip
             trigger={
-              <div className="text-secondary-50 hover:text-white cursor-pointer">
+              <div className="text-default-light hover:text-white cursor-pointer">
                 <VscDebugAlt size={25} />
               </div>
             }
@@ -49,7 +49,7 @@ function ActivityBar() {
           />
           <Tooltip
             trigger={
-              <div className="text-secondary-50 hover:text-white cursor-pointer">
+              <div className="text-default-light hover:text-white cursor-pointer">
                 <VscExtensions size={25} />
               </div>
             }
@@ -59,7 +59,7 @@ function ActivityBar() {
         <div className="flex flex-col gap-6">
           <Tooltip
             trigger={
-              <div className="text-secondary-50 hover:text-white cursor-pointer">
+              <div className="text-default-light hover:text-white cursor-pointer">
                 <VscAccount size={25} />
               </div>
             }
@@ -67,7 +67,7 @@ function ActivityBar() {
           />
           <Tooltip
             trigger={
-              <div className="text-secondary-50 hover:text-white cursor-pointer">
+              <div className="text-default-light hover:text-white cursor-pointer">
                 <VscSettingsGear size={25} />
               </div>
             }

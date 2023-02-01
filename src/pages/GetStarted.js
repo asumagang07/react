@@ -10,10 +10,10 @@ import styled from "styled-components";
 
 function GetStarted() {
   return (
-    <StyledDiv className="flex w-full h-full justify-center items-center text-primary-text p-4 bg-secondary-400">
+    <StyledDiv className="flex w-full h-full justify-center items-center text-grayText p-4 bg-secondary-400">
       <div className="w-4/5 h-3/4 mx-auto">
         <div className="flex flex-col gap-2">
-          <h1 className="text-5xl">Adrian Sumagang</h1>
+          <h1 className="text-5xl text-white">Adrian Sumagang</h1>
           <p className="text-xl text-primary-text">
             UI Developer || Graphics Designer
           </p>
@@ -22,17 +22,17 @@ function GetStarted() {
         <div className="flex w-full mt-8 gap-8">
           <div className="flex flex-col gap-2 w-[500px]">
             <p className="text-xl">Connect with me</p>
-            <button className="flex items-center gap-3 text-primary-600">
+            <button className="flex items-center gap-3 text-blueText">
               <AiOutlineLinkedin size={25} />
               <a href=" https://www.linkedin.com/in/adrian-sumagang-16aaa4195/">
                 adriansumagang
               </a>
             </button>
-            <button className="flex items-center gap-3 text-primary-600">
+            <button className="flex items-center gap-3 text-blueText">
               <AiOutlineMail size={25} />
               adrianr.sumagang@gmail.com
             </button>
-            <button className="flex items-center gap-3 text-primary-600">
+            <button className="flex items-center gap-3 text-blueText">
               <AiOutlineFacebook size={25} />
               adrianronquillosumagang
             </button>
@@ -40,21 +40,21 @@ function GetStarted() {
           <div className="flex flex-col gap-4 w-[500px]">
             <p className="text-xl">Walkthroughs</p>
 
-            <div className=" bg-secondary-300 flex flex-col rounded-md py-2 px-4">
+            <div className=" bg-default-400 flex flex-col rounded-md py-2 px-4">
               <p>Get Started with VS Code</p>
               <p>Discover the best customizations to make VS Code</p>
             </div>
-            <div className=" bg-secondary-300 flex flex-col rounded-md py-2 px-4">
+            <div className=" bg-default-400 flex flex-col rounded-md py-2 px-4">
               <button className="flex items-center gap-2">
                 <VscLightbulb size={20} color="#397cff" />
                 Learn the Fundamentals
               </button>
             </div>
-            <div className=" bg-secondary-300 flex flex-col rounded-md py-2 px-4">
+            <div className=" bg-default-400 flex flex-col rounded-md py-2 px-4">
               <p>Get Started with VS Code</p>
               <p>Discover the best customizations to make VS Code</p>
             </div>
-            <div className=" bg-secondary-300 flex flex-col rounded-md py-2 px-4">
+            <div className=" bg-default-400 flex flex-col rounded-md py-2 px-4">
               <button className="flex items-center gap-2">
                 <SiJavascript size={20} color="#f2eb00" />
                 Get Started with Javascript

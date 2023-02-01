@@ -3,7 +3,7 @@ import Numberline from "../components/Numberline";
 
 function EmploymentHistory() {
   return (
-    <div className="flex w-full text-primary-text p-4 bg-secondary-400" style={{ minHeight: 'calc(100vh - 132px)' }}>
+    <div className="flex w-full text-grayText p-4 bg-secondary-400" style={{ minHeight: 'calc(100vh - 132px)' }}>
       <Numberline number={26} />
       <div className="flex flex-col employent-code text-sm">
         <p>

@@ -55,7 +55,7 @@ function Tooltip(props) {
         <FloatingPortal>
           {open && (
             <div
-              className="Tooltip bg-secondary-300 border border-secondary-50 text-primary-text p-1 text-xs drop-shadow-sm"
+              className="Tooltip bg-default-600 border border-default-100 text-grayText p-1 text-xs drop-shadow-sm"
               ref={refs.setFloating}
               style={{
                 // Positioning styles

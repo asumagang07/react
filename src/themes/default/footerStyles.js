@@ -7,7 +7,7 @@ export const footerStyles = {
       primary: "bg-primary-400",
       secondary: "",
       info: "",
-      success: "bg-success-400",
+      success: "bg-[#16825d]",
       warning: "",
       danger: "",
       default: "",
