@@ -49,7 +49,7 @@ function Footer() {
           1
           <VscWarning />0
         </button>
-        <button>Git Graph</button>
+        <button className={btnStyles}>Git Graph</button>
       </div>
       {/* //////////////////////////////////// */}
       <div className="flex items-center gap-3 pr-3">

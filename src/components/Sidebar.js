@@ -18,7 +18,7 @@ import SideNav from "./SideNav";
 
 const items = [
   {
-    uuid: '1',
+    uuid: "react",
     icon: <VscChevronDown size={20} />,
     heading: "REACT",
     content: <SideNav />,
@@ -33,7 +33,7 @@ function Sidebar() {
         <VscEllipsis />
       </div>
       {/* ///////////////////////////////////////// */}
-      <Accordion allowZeroExpanded= {true} className=" flex w-full">
+      <Accordion preExpanded={["react"]} className=" flex w-full">
         {items.map((item) => (
           <AccordionItem key={item.uuid} className="w-full px-4 py-1">
             <AccordionItemHeading>

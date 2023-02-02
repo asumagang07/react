@@ -34,7 +34,7 @@ module.exports = {
         "defaultText": "#FFFFFF",
         "grayText":"#CCCCCC",
         "orangeText": "#CE9178",
-        "blueText": "#2356B8",
+        "blueText": "#397cff",
         "cyanText": "#7BDCFE",
         "greenText": "#4EC9B0",
         "purpleText": "#C586C0"

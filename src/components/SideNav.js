@@ -42,7 +42,7 @@ export const items = [
 function SideNav() {
   return (
     <div>
-      <Accordion allowZeroExpanded className=" flex flex-col w-full">
+      <Accordion className=" flex flex-col w-full">
         {items.map((item) => (
           <AccordionItem key={item.uuid} className="w-full px-4 py-1">
             <AccordionItemHeading>
