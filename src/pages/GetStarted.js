@@ -99,7 +99,7 @@ function GetStarted() {
             <div>
               <div className=" bg-default-400 hover:bg-default-300 flex flex-col rounded-t-md py-2 px-4 gap-2">
                 <p className="font-semibold">Adobe Application</p>
-                <div className="flex gap-2">
+                <div className="flex gap-2 flex-wrap">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Photoshop_CC_icon.png" className="w-5 h-5" />
                   <p className="">Photoshop</p>
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/2101px-Adobe_XD_CC_icon.svg.png" className="w-6 h-6" />
