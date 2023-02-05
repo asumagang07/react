@@ -28,10 +28,13 @@ function List() {
   console.log(listitems, "@@@@@@@@@@@@");
 
   return (
-    <div className="flex flex-col gap-2 pt-2 pl-4">
+    <div className="flex flex-col pl-4">
       {listitems?.map((item) => {
         return (
-          <div key={item.id} className="flex gap-2 items-center text-sm">
+          <div
+            key={item.id}
+            className="flex gap-2 py-1 border items-center text-sm"
+          >
             {item.icon} {item.title}
           </div>
         );
