@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import MainDiv from "../components/MainDiv";
@@ -7,8 +7,11 @@ import ActivityBar from "../components/ActivityBar";
 import Sidebar from "../components/Sidebar";
 import RouterPage from "./RouterPage";
 import DraggableTabs from "../components/DraggableTabs";
+import {tabs} from "../utils/tabs";
 
 function Home() {
+  const [newTabs, setTabs] = useState(tabs);
+
   return (
     <div className="flex flex-col">
       <Header />
@@ -17,7 +20,7 @@ function Home() {
         <ActivityBar />
         <Sidebar />
         <RouterPage>
-          <DraggableTabs />
+          <DraggableTabs tabs={tabs}/>
         </RouterPage>
       </MainDiv>
       <Footer />

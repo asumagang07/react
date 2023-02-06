@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import { DiJavascript1, DiCss3 } from "react-icons/di";
-import { VscChromeClose } from "react-icons/vsc";
-import { DiVisualstudio } from "react-icons/di";
+import {
+  VscChromeClose,
+  VscEllipsis,
+  VscSplitHorizontal,
+  VscHistory,
+} from "react-icons/vsc";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import cn from "classnames";
 import EmploymentHistory from "../pages/EmploymentHistory";
@@ -9,30 +12,7 @@ import Services from "../pages/Services";
 import Profile from "../pages/Profile";
 import GetStarted from "../pages/GetStarted";
 
-const tabs = [
-  {
-    id: "getStarted",
-    title: "Get Started",
-    icon: <DiVisualstudio size={20} color={"#007acc"} />,
-  },
-  {
-    id: "about",
-    title: "About.css",
-    icon: <DiCss3 size={20} color={"#0066b8"} />,
-  },
-  {
-    id: "employment",
-    title: "EmploymentHistory.js",
-    icon: <DiJavascript1 size={20} color="#f2eb00" />,
-  },
-  {
-    id: "services",
-    title: "Services.js",
-    icon: <DiJavascript1 size={20} color="#f2eb00" />,
-  },
-];
-
-function DraggableTabs() {
+function DraggableTabs({ tabs }) {
   const [active, setActive] = useState("getStarted");
   const [draggedTabs, setDraggedTabs] = useState(tabs);
 
@@ -61,6 +41,14 @@ function DraggableTabs() {
   return (
     <div className="relative flex flex-col w-full">
       <div
+        className="fixed z-10 top-[4.5rem] right-0 pr-6 h-[36px] min-w-[3rem]
+      flex items-center gap-3 text-grayText"
+      >
+        <VscHistory />
+        <VscSplitHorizontal />
+        <VscEllipsis />
+      </div>
+      <div
         className=" flex sticky top-0
        bg-default-400 "
       >
@@ -78,13 +66,11 @@ function DraggableTabs() {
                       {(provided, snapshot) => (
                         <li
                           className={cn(
-                            "flex py-2 px-4 items-center gap-2  border-r border-default-600 text-xs text-grayText",
+                            "flex py-2 px-4 items-center justify-center gap-2 min-w-[5rem]  border-r border-default-600 text-xs text-grayText",
                             snapshot.isDragging
                               ? "drop-shadow-lg opacity-50"
                               : "",
-                            active === id
-                              ? "bg-default-600"
-                              : "bg-default-200"
+                            active === id ? "bg-default-600" : "bg-default-200"
                           )}
                           onClick={() => {
                             handleActive(id);
@@ -93,7 +79,9 @@ function DraggableTabs() {
                           {...provided.draggableProps}
                           {...provided.dragHandleProps}
                         >
-                          <div className="characters-thumb">{icon}</div>
+                          {icon && (
+                            <div className="characters-thumb">{icon}</div>
+                          )}
                           {title}
                           {active === id && (
                             <div
@@ -117,7 +105,7 @@ function DraggableTabs() {
       {/* //////////////////////////////////// */}
       {active === "employment" ? (
         <EmploymentHistory />
-      ) : active === "about" ? (
+      ) : active === "profile" ? (
         <Profile />
       ) : active === "getStarted" ? (
         <GetStarted />

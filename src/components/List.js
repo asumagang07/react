@@ -25,15 +25,15 @@ const listitems = [
 ];
 
 function List() {
-  console.log(listitems, "@@@@@@@@@@@@");
 
   return (
-    <div className="flex flex-col pl-4">
+    <div className="flex flex-col w-full">
       {listitems?.map((item) => {
         return (
           <div
             key={item.id}
-            className="flex gap-2 py-1 border items-center text-sm"
+            className="flex gap-2 py-1 px-4 hover:bg-default-200 items-center text-sm"
+            onClick={() => console.log('selected', item.title)}
           >
             {item.icon} {item.title}
           </div>
